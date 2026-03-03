@@ -1,0 +1,7 @@
+faiss-cpu
+pypdf
+sentence-transformers
+langchain
+langchain_text_splitters
+google-generativeai
+streamlit
