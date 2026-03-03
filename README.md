@@ -12,8 +12,6 @@ A Retrieval-Augmented Generation (RAG) based chatbot that answers questions usin
 pip install -r requirements.txt
 ```
 
----
-
 ### 2️⃣ Set Environment Variable
 
 Create a `.env` file in the root directory:
@@ -25,9 +23,9 @@ GEMINI_API_KEY=your_gemini_api_key # Provide your cloud provider's API key
 
 ---
 
-## Usage
+## Steps to Run
 
-### 2️⃣ Ingest Documents
+### 1️⃣ Ingest Documents
 
 Create a folder named `pdfs` in the root directory (if it does not exist). Place all PDFs inside the `pdfs/` folder, then run:
 
@@ -41,9 +39,8 @@ This will:
 - Generate embeddings
 - Store them in the vector database
 
----
 
-### 3️⃣ Run Chatbot UI
+### 2️⃣ Run Chatbot UI
 
 ```bash
 streamlit run 2_streamlit_app.py
@@ -53,17 +50,6 @@ This will:
 - Launch the Streamlit chatbot interface
 - Internally use `rag.py` for retrieval and response generation
 - Display the source of each answer (PDF name and page number)
-
----
-
-## How It Works
-
-User Query  
-→ Vector similarity search  
-→ Retrieve relevant document chunks  
-→ Augment prompt with retrieved context  
-→ Generate grounded response  
-→ Display source citation (PDF name + page number)
 
 ---
 
