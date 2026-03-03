@@ -61,3 +61,11 @@ This will:
 - The project currently uses Gemini via `GEMINI_API_KEY`. The cloud model provider can be changed as needed.
 
 ---
+
+## 🖥️ Streamlit Demo
+
+### Part 1
+![Chat Demo 1](chat_demo/chat_1.png)
+
+### Part 2
+![Chat Demo 2](chat_demo/chat_2.png)
