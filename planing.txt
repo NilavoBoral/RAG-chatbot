@@ -29,3 +29,5 @@
 - Currently embedings, chat-history everything is in local. Have to connect actual DBs.
 
 - For every user's query, chat-history should not be fetched from DB. We will fetch and store in catche. And update again in a time interval.
+
+- While updating embeddings, process only new or modified files instead of reprocessing all documents.
